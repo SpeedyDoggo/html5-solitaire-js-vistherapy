@@ -10,8 +10,8 @@
 	});
 };
 
-var WarpKlondikeMain = (function(game) 
-{	
+var WarpKlondikeMain = (function(game)
+{
 	function bindListeners()
 	{
 		$('#playground').css('margin-top', parseInt((window.innerHeight - parseInt($('#playground').height())) / 2) + 'px');
@@ -58,11 +58,11 @@ var WarpKlondikeMain = (function(game)
 			if ($('#scores').hasClass('flipped'))
 				game.togglePauseGame(false);
 			else
-				game.togglePauseGame(true);			
+				game.togglePauseGame(true);
 
 			$('#options').removeClass('flipped');
-			
-			$('#shadow').fadeIn('normal', function() { 
+
+			$('#shadow').fadeIn('normal', function() {
 				$('#scores').toggleClass('flipped');
 			});
 
@@ -87,7 +87,7 @@ var WarpKlondikeMain = (function(game)
 
 			$(this).removeClass('over');
 
-			$('#shadow').fadeIn('normal', function() { 
+			$('#shadow').fadeIn('normal', function() {
 				$('#options').toggleClass('flipped');
 			});
 
@@ -127,7 +127,7 @@ var WarpKlondikeMain = (function(game)
 			setTimeout(function() {  }, 2901);
 			setTimeout(hideSplash, 3000);
 
-			// TODO: add proper methods for that 
+			// TODO: add proper methods for that
 			StateManager.init('1.0', function(gameOptions, status, scores)
 			{
 				//Console.log(scores);
@@ -145,7 +145,7 @@ var WarpKlondikeMain = (function(game)
 							time: 7000,
 							fade_in_speed: 'fast',
 							fade_out_speed: 400
-						}); 
+						});
 						if (!navigator.userAgent.match('WebKit'))
 						{
 							$.gritter.add({
@@ -170,7 +170,7 @@ var WarpKlondikeMain = (function(game)
 		setTheme: function(themeName)
 		{
 			var $themeSheet = $('#themeCSS');
-			
+
 			if ($themeSheet.length)
 			{
 				$themeSheet.attr('href', 'css/themes/' + themeName + '/theme.css');
@@ -218,7 +218,7 @@ var WarpKlondikeMain = (function(game)
 
 			var $ul = $('#scores ul');
 			$('#scores ul li').remove();
-			
+
 			for (var i = 0; i < scoresArray.length; i++)
 			{
 				$('<li/>').append('<span class="rank">' + (i+1) + '</span>' + '<span class="nick">' + scoresArray[i].nick + '</span>' + '<span class="score">' + scoresArray[i].score + '</span>').appendTo($ul);

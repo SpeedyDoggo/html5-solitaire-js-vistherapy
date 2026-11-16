@@ -1,15 +1,16 @@
 body{
-	background:transparent url(img/prestige-COD.gif);
+	background:transparent url(img/prestige-COD.png);
+	background-color: black;
 }
 
 .hd #playground {
-	background-image:url(img/backgroundTable.png);
+	background-image:url(img/backgroundTablePixel.png);
 	background-color:transparent;
 }
 
 .hd .light .card, .hd .light .pack, .hd .light .pack, .hd .light .waste
 {
-	background-image:url(img/sprites.png);
+	background-image:url(img/pixelcards.png);
 }
 
 /* TODO: use gradients ! */
@@ -18,10 +19,10 @@ body{
 	background:transparent url("img/overlay.png") repeat-x;
 }
 
-#optionsPanel
+/* #optionsPanel
 {
 	background:transparent url("img/overlayInvert.png") repeat-x;
-}
+} */
 
 .icon
 {
@@ -37,26 +38,26 @@ body{
 	background-image:url(img/icons/home.png);
 }
 
-#scores, #youWon{
+#scores {
 	position:absolute;
 	width:724px;
 	height:506px;
 	left:148px;
-	top:0px;
 	background:transparent url(img/scores.png) center no-repeat;
 	color:black;
 }
 
 #youWon{
-	background-image:url(img/youWon.png);
+	top: 0px;
+	background-color:black;
 	width: 268px;
-	height: 381px;
 }
 
 #youWon .contents{
 	margin:30px;
-	margin-top:122px;
+	margin-top:50px;
 	text-align:center;
+	color: green;
 }
 
 #youWon .contents p{
@@ -66,8 +67,10 @@ body{
 
 #options {
 	width:268px;
-	height:381px;
-	background:transparent url(img/optionsBack2.png) no-repeat;
+	height:212px;
+	background-color: black;
+	border: 3px green solid;
+	border-radius: 1em;
 	position:absolute;
 	left:380px;
 	top:50px;
@@ -76,24 +79,35 @@ body{
 #options fieldset{
 	margin:0 20px;
 	border:none;
-	margin-top:85px;
+	margin-top:4px;
+	color: green;
+}
+
+#checks {
+	margin-top: 20px;
 }
 
 .check{
-	background:transparent url(img/check.png) center left no-repeat;
-	padding:8px 30px;
+	background:transparent url(img/pixelcheck.png) center left no-repeat;
+	padding:8px 40px;
 	cursor:pointer;
 	text-align:left;
 }
 
 .check.checked{
-	background-image:url(img/checkChecked.png);
+	background-image:url(img/pixelcheckChecked.png);
 }
 
 .ok {
 	height:27px;
-	background:transparent url(img/okBt.png) center no-repeat;
+	background: green;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 1em;
 	cursor:pointer;
+	margin-top: 20px;
+	padding-top: 10px;
 }
 
 #scores ul li {

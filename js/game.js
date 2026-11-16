@@ -24,19 +24,19 @@ var MAX_CARDS = 7;
 var DISPLAY_POSITIONS = {
 	'hd': {
 		/* sprites positions inside the sprites file */
-		SPRITE_XSTART: 47,
-		XSTART: 100,
-		XSPACE: 88,
-		CARDBACK: {x: 487, y: 280},
-		BACKSY: { heart: 4, diamond: 113, club: 223, spade: 332, misc: 441 },
+		SPRITE_XSTART: 1, /* prev 47 */
+		XSTART: 100, /* prev 100 */
+		XSPACE: 80, /* prev 88 */
+		CARDBACK: {x: 480, y: 400},
+		BACKSY: { heart: 0, diamond: 100, club: 200, spade: 300, misc: 400 },
 
-		MAIN_DECK_Y: 280,
+		MAIN_DECK_Y: 280, /* prev 280 */
 		WASTEPOS: { x: 140, y: 66 },
 		ACESPOS: { x: 438, space: 120 },
 
-		VISIBLE_CARD_SPACE: 18,
+		VISIBLE_CARD_SPACE: 18, /* prev 18 */
 		HIDDEN_CARD_SPACE: 6,
-		PACK_CARD_SPACE: 36
+		PACK_CARD_SPACE: 36 /* prev 36 */
 	}
 };
 

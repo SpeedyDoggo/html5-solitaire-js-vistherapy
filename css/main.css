@@ -1,7 +1,7 @@
 body,html
 {
-	font-family:"La Belle Aurore", arial, serif;
-	font-size:18px;	
+	font-family:"Courier", arial, serif;
+	font-size:18px;
 	line-height:18px;
 	padding:0;
 	margin:0;
@@ -21,6 +21,13 @@ div{
 
 .visible{
 	display:block;
+}
+
+.popup-head {
+	text-align: center;
+	margin-top: 20px;
+	font-size: xx-large;
+	font-weight: bolder;
 }
 
 /* TODO: special design for the pack card */
@@ -59,91 +66,50 @@ div{
 	display:block;
 }
 
-.default .card, .default .pack{
-	background-image:url(../img/sprites.png);
-}
-
 .light .card, .light .pack{
-	background-image:url(../img/spritesGuillaume.png);
+	background-image:url(../img/sprites-vistherapy.png);
+	filter: saturate(200%);
 }
 
 .aceHeart, .ace0{
-	background-position: -93px -441px;
+	background-position: -81px -400px;
 	top:26px;
 	left:182px;
 }
 
 .aceDiamond, .ace1{
-	background-position: -157px -280px;
+	background-position: -160px -400px;
 	top:26px;
 	left:248px;
 }
 
 .aceClub, .ace2{
-	background-position: -212px -280px;
+	background-position: -240px -400px;
 	top:26px;
 	left:372px;
 }
 
 .aceSpade, .ace3{
-	background-position: -267px -280px;
+	background-position: -320px -400px;
 	top:26px;
 	left:310px;
 }
 
-/* HD */
-.hd .aceHeart, .hd .ace0{
-	background-position: -135px -441px;
-	top:26px;
-	left:347px;
-}
-
-.hd .aceDiamond, .hd .ace1{
-	background-position: -224px -441px;
-	top:26px;
-	left:480px;
-}
-
-.hd .aceClub, .hd .ace2{
-	background-position: -313px -441px;
-	top:26px;
-	left:742px;
-}
-
-.hd .aceSpade, .hd .ace3{
-	background-position: -402px -441px;
-	top:26px;
-	left:611px;
-}
-
 /* Position of the main stack */
 .returnedCard{
-	background-position:-47px -280px;
+	background-position:-1px -400px;
 	top:26px;
 	left:47px;
-}
-
-.hd .returnedCard{
-	background-position:-47px -441px;
 }
 
 .returnedCard.empty{
-	background-position:-432px -280px;
-}
-
-.hd .returnedCard.empty{
-	background-position:-576px -440px;
+	background-position:-560px -400px;
 }
 
 .king{
-	background-position:-322px -280px;
+	background-position:-400px -400px;
 	top:112px;
 	left:47px;
-}
-
-.hd .king{
-	background-position:-663px -440px;
-	top:169px;
 }
 
 .hd .king:nth-child(1){
@@ -228,9 +194,9 @@ div{
 #statusPanel .score{
 	margin-top:18px;
 	background:transparent url(../img/icon_star.png) no-repeat;
-	padding-left:24px;	
+	margin-left: 625px;
+	padding-left:24px;
 	float:left;
-	width:33%;
 	text-align:left;
 	font-weight:bold;
 }
@@ -302,11 +268,11 @@ div{
 
 /*** HD stuf ***/
 .hd .light .card, .hd .light .pack, .hd .light .pack, .hd .light .waste{
-	width:86px;
-	height:106px;
+	width:80px;
+	height:100px;
 	left:140px;
 	top:66px;
-}	
+}
 /*** /HD ***/
 
 .particle1, .particle2, .particle3{
@@ -343,6 +309,13 @@ form#options{
 	opacity:0;
 	display:none;
 	color:black;
+}
+
+#wonHeader {
+	font-size: 2em;
+	font-weight: bolder;
+	display: block;
+	margin-bottom: 20px;
 }
 
 form#options h1{
@@ -474,7 +447,7 @@ fieldset ul{
 	text-align:left;
 	padding:0;
 }
-	
+
 fieldset li{
 	text-align:center;
 	list-style-type:none;
@@ -495,7 +468,7 @@ fieldset li a img{
 	border:none;
 }
 
-#splash{
+/* #splash{
 	position:absolute;
 	top:0;
 	left:0;
@@ -512,7 +485,7 @@ fieldset li a img{
 	-webkit-transition-property: opacity;
 	-webkit-transition-duration:1s;
 	opacity:0;
-}
+} */
 
 #tweet-button.tb-container{
 	display:inline-block;
